@@ -12,7 +12,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ code, setCode, isRunning }) => 
     setCode(e.target.value);
   };
 
-  // Function to highlight Brainfuck syntax
+  // Function to highlight BrainF*ck syntax
   const highlightCode = (code: string): string => {
     return code
       .replace(/\+/g, '<span class="text-yellow-400">+</span>')
@@ -31,7 +31,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ code, setCode, isRunning }) => 
       <div className="relative">
         <textarea
           className="w-full bg-gray-950 text-green-400 p-3 border border-green-500/30 focus:border-green-500 outline-none rounded min-h-[300px] font-mono"
-          placeholder="Enter your Brainfuck code here..."
+          placeholder="Enter your Brainf*ck code here..."
           value={code}
           onChange={handleChange}
           disabled={isRunning}

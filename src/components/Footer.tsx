@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-400">
               &copy; {new Date().getFullYear()} BrainHack | 
               <span className="text-green-400 ml-1">
-                Learning Brainfuck with style
+                Learning Brainf*ck with style
               </span>
             </p>
           </div>

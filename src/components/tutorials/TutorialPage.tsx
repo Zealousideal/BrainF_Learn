@@ -24,7 +24,7 @@ const TutorialPage: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-bold text-green-400">Learning Brainfuck</h1>
+      <h1 className="text-2xl font-bold text-green-400">Learning Brainf*ck</h1>
       
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="lg:w-80 lg:shrink-0">
