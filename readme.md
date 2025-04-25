@@ -1,15 +1,14 @@
 # 🧠 Brainfuck Learning Platform
-![alt text](BF_Tutorials.png)
-
+![alt text](/Assets_readme/BF_Tutorials.png)
 A modern, beautiful, and interactive **React-based** web application to learn and explore the esoteric programming language **Brainfuck**. This platform is divided into three main sections:
 
 - 📚 **Tutorials**: Learn the fundamentals, syntax, and nature of Brainfuck.
 - 🧪 **Playground**: Write and run Brainfuck code directly in the browser.
 
-![alt text](BF_Playground.png)
+![alt text](/Assets_readme/BF_Playground.png)
 
 - 💾 **Code Snippets**: Explore various sample programs with a one-click load to the Playground.
-![alt text](BF_Snippets.png)
+![alt text](/Assets_readme/BF_Snippets.png)
 ---
 
 ## 🚀 Features
