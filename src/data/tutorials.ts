@@ -7,34 +7,34 @@ export interface TutorialSection {
 export const tutorialSections: TutorialSection[] = [
   {
     id: 'introduction',
-    title: 'Introduction to Brainfuck',
+    title: 'Introduction to BrainF*ck',
     content: `
-## Welcome to Brainfuck
+## Welcome to BrainF*ck
 
-Brainfuck is an esoteric programming language created in 1993 by Urban Müller. It was designed to challenge and amuse programmers with its minimalism. Despite having only 8 commands, Brainfuck is Turing complete - meaning it can compute any algorithm that can be computed by any other programming language (though not always efficiently).
+BrainF*ck is an esoteric programming language created in 1993 by Urban Müller. It was designed to challenge and amuse programmers with its minimalism. Despite having only 8 commands, BrainF*ck is Turing complete - meaning it can compute any algorithm that can be computed by any other programming language (though not always efficiently).
 
-## Why Learn Brainfuck?
+## Why Learn BrainF*ck?
 
 You might wonder why anyone would learn such an impractical language. Here are a few reasons:
 
 1. **Mental Exercise**: It forces you to think about programming at a fundamental level
 2. **Understanding Computer Architecture**: It operates similar to a Turing machine
 3. **Appreciation for High-Level Languages**: You'll never take modern programming languages for granted again
-4. **Bragging Rights**: Knowing Brainfuck is a badge of honor among programmers
+4. **Bragging Rights**: Knowing BrainF*ck is a badge of honor among programmers
 5. **Fun Challenge**: It's like solving an extreme programming puzzle
 
-Brainfuck programs can be difficult to read and write, but that's part of the appeal for many enthusiasts. The language is minimalist but complete, frustrating but rewarding.
+BrainF*ck programs can be difficult to read and write, but that's part of the appeal for many enthusiasts. The language is minimalist but complete, frustrating but rewarding.
     `
   },
   {
     id: 'basics',
-    title: 'Brainfuck Basics',
+    title: 'BrainF*ck Basics',
     content: `
 ## Memory Model
 
-Before diving into the commands, you need to understand Brainfuck's memory model:
+Before diving into the commands, you need to understand BrainF*ck's memory model:
 
-- Brainfuck operates on an array of memory cells, each initially set to zero
+- BrainF*ck operates on an array of memory cells, each initially set to zero
 - There's a pointer that starts at the first cell
 - Each cell can hold an integer value (typically 0-255 in most implementations)
 - The pointer can move left and right to access different cells
@@ -43,7 +43,7 @@ Think of it as a tape with cells that you can navigate and modify.
 
 ## The 8 Commands
 
-Brainfuck uses only 8 commands, each represented by a single character:
+BrainF*ck uses only 8 commands, each represented by a single character:
 
 | Command | Description |
 |---------|-------------|
@@ -56,7 +56,7 @@ Brainfuck uses only 8 commands, each represented by a single character:
 | \`[\` | If the value at the pointer is zero, jump to the matching \`]\` |
 | \`]\` | If the value at the pointer is non-zero, jump back to the matching \`[\` |
 
-That's it! Any other characters in a Brainfuck program are considered comments and ignored.
+That's it! Any other characters in a BrainF*ck program are considered comments and ignored.
     `
   },
   {
@@ -99,14 +99,14 @@ That's it! Any other characters in a Brainfuck program are considered comments a
 
 ## Important Notes About Loops
 
-The \`[\` and \`]\` commands form Brainfuck's only control structure - the loop. It's critical to understand:
+The \`[\` and \`]\` commands form BrainF*ck's only control structure - the loop. It's critical to understand:
 
 1. Loops execute as long as the current cell value is **not zero**
 2. If the current cell is zero when reaching a \`[\`, execution jumps to after the matching \`]\`
 3. If the current cell is non-zero when reaching a \`]\`, execution jumps back to after the matching \`[\`
 4. Loops can be nested just like in other languages
 
-Loops are what make Brainfuck Turing complete despite its minimal command set.
+Loops are what make BrainF*ck Turing complete despite its minimal command set.
     `
   },
   {
@@ -115,7 +115,7 @@ Loops are what make Brainfuck Turing complete despite its minimal command set.
     content: `
 ## Hello World
 
-The classic first program in any language. In Brainfuck, it's a bit more complex:
+The classic first program in any language. In BrainF*ck, it's a bit more complex:
 
 \`\`\`
 ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
@@ -161,7 +161,7 @@ These examples demonstrate how even simple programs can be implemented, albeit w
     id: 'techniques',
     title: 'Programming Techniques',
     content: `
-## Common Brainfuck Patterns
+## Common BrainF*ck Patterns
 
 Learning common patterns will help you write more complex programs:
 
@@ -197,7 +197,7 @@ Copies value from the current cell to the next two cells.
 
 ## Debugging Tips
 
-Debugging Brainfuck can be challenging:
+Debugging BrainF*ck can be challenging:
 
 1. **Use Visualization Tools**: Our playground helps you see memory changes
 2. **Add Output Checkpoints**: Insert \`.\` at strategic points to see cell values
@@ -207,27 +207,27 @@ Debugging Brainfuck can be challenging:
 
 ## Optimization Techniques
 
-Optimizing Brainfuck code:
+Optimizing BrainF*ck code:
 
 1. **Minimize Loops**: Each loop adds complexity
 2. **Efficient Cell Usage**: Plan your memory layout
 3. **Arithmetic Shortcuts**: For example, \`++++++++++\` can be rewritten as \`+++++[>++<-]\`
 4. **Use Multiplication**: For large values, multiplication loops are more efficient than repeated addition
 
-With practice, you'll develop an intuition for efficient Brainfuck programming.
+With practice, you'll develop an intuition for efficient BrainF*ck programming.
     `
   },
   {
     id: 'advanced',
     title: 'Advanced Concepts',
     content: `
-## Advanced Brainfuck Concepts
+## Advanced BrainF*ck Concepts
 
 Once you've mastered the basics, explore these advanced concepts:
 
-### Brainfuck Algorithms
+### BrainF*ck Algorithms
 
-Complex algorithms are possible in Brainfuck, including:
+Complex algorithms are possible in BrainF*ck, including:
 
 - Sorting algorithms
 - Mathematical functions (square root, exponentiation)
@@ -236,23 +236,23 @@ Complex algorithms are possible in Brainfuck, including:
 
 ### Self-Modifying Code
 
-Brainfuck doesn't directly support self-modifying code, but you can simulate it by:
+BrainF*ck doesn't directly support self-modifying code, but you can simulate it by:
 
 1. Using memory cells to track "instruction pointers"
-2. Implementing a Brainfuck interpreter in Brainfuck itself
+2. Implementing a BrainF*ck interpreter in BrainF*ck itself
 
 ### Extended Variants
 
-Several extended versions of Brainfuck exist:
+Several extended versions of BrainF*ck exist:
 
-- **BrainFuck++**: Adds additional commands for more complex operations
+- **BrainF*ck++**: Adds additional commands for more complex operations
 - **Extended Type**: Extends cell size beyond 8 bits
-- **Ook!**: Replaces Brainfuck symbols with "Ook." and "Ook?"
+- **Ook!**: Replaces BrainF*ck symbols with "Ook." and "Ook?"
 - **TrollScript**: A humorous variant with emojis as commands
 
 ### Compiler Writing
 
-Creating a Brainfuck compiler or transpiler is an excellent exercise in:
+Creating a BrainF*ck compiler or transpiler is an excellent exercise in:
 
 - Parsing
 - Code generation
@@ -261,7 +261,7 @@ Creating a Brainfuck compiler or transpiler is an excellent exercise in:
 
 ### Turing Completeness Proof
 
-Understanding why Brainfuck is Turing complete requires knowledge of:
+Understanding why BrainF*ck is Turing complete requires knowledge of:
 
 - Turing machines
 - Computational theory
@@ -271,7 +271,7 @@ This is a fascinating theoretical aspect of this minimalist language.
 
 ## Final Thoughts
 
-Brainfuck pushes the boundaries of minimalism while remaining computationally complete. It's a reminder that programming languages don't need to be complex to be powerful - though they certainly can be more practical!
+BrainF*ck pushes the boundaries of minimalism while remaining computationally complete. It's a reminder that programming languages don't need to be complex to be powerful - though they certainly can be more practical!
 
 As you continue your journey, remember that the difficulty is part of the fun. Embrace the challenge!
     `

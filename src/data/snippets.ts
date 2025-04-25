@@ -10,7 +10,7 @@ export const snippets: CodeSnippet[] = [
   {
     id: 'hello-world',
     title: 'Hello World',
-    description: 'The classic Hello World program written in Brainfuck.',
+    description: 'The classic Hello World program written in BrainF*ck.',
     code: '++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.',
     difficulty: 'beginner'
   },
